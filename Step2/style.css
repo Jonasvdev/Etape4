@@ -59,6 +59,7 @@ button {
 }
 
 /* Masqué visuellement mais lisible par les lecteurs d'écran */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -84,6 +85,7 @@ button {
 }
 
 /* Logo : carré noir avec 3 barres blanches */
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -107,6 +109,7 @@ button {
 }
 
 /* Navigation */
+
 .main-nav ul {
   display: flex;
   gap: 28px;
