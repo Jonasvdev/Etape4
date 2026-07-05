@@ -131,6 +131,7 @@ button {
 }
 
 /* Actions droite du header */
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -168,6 +169,7 @@ button {
 }
 
 /* Desktop : search-row = le flex direct, search-controls masqué */
+
 .search-row {
   display: contents; /* les enfants participent au flex du parent */
 }
@@ -212,6 +214,7 @@ button {
 }
 
 /* Séparateur avant le tri */
+
 #sort-select {
   margin-left: auto;
   font-family: var(--font-avenir);
@@ -238,7 +241,7 @@ button {
 
 .sidebar {
   position: sticky;
-  top: 116px; /* header 60px + search-bar 56px */
+  top: 116px;   /* header 60px + search-bar 56px */
 }
 
 .filter-label {
@@ -269,6 +272,7 @@ button {
 }
 
 /* Flèche simulée en CSS après le texte */
+
 .filter-toggle::after {
   content: '›';
   transform: rotate(90deg);
@@ -303,6 +307,7 @@ button {
 }
 
 /* Sliders prix */
+
 input[type="range"] {
   width: 100%;
   accent-color: var(--color-black);
@@ -335,6 +340,7 @@ input[type="range"] {
 }
 
 /* Image */
+
 .product-card > article > a img {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -349,6 +355,7 @@ input[type="range"] {
 }
 
 /* Infos sous l'image */
+
 .product-info {
   padding-top: 10px;
   display: flex;
@@ -426,13 +433,14 @@ input[type="range"] {
   outline-offset: 3px;
 }
 
-/* ================================================
+/* 
    MOBILE — max-width: 768px
-   ================================================ */
+  */
 
 @media (max-width: 768px) {
 
   /* Header : logo + panier + hamburger, nav masquée */
+
   .site-header {
     gap: 0;
     padding: 0 16px;
@@ -463,6 +471,7 @@ input[type="range"] {
   }
 
   /* Barre de recherche : 2 lignes */
+
   .search-bar {
     flex-direction: column;
     height: auto;
@@ -480,6 +489,7 @@ input[type="range"] {
   }
 
   /* "Best match" et "Filters" : 2 blocs empilés avec séparateur */
+
   .search-controls {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -525,6 +535,7 @@ input[type="range"] {
   }
 
   /* Layout : colonne unique, sidebar masquée par défaut */
+
   .shop-layout {
     grid-template-columns: 1fr;
     padding: 0 16px 32px;
@@ -544,12 +555,14 @@ input[type="range"] {
   }
 
   /* Grille produits : 1 colonne */
+
   .products-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
   /* Cartes : image plus grande */
+
   .product-card > article > a img {
     aspect-ratio: 3 / 2;
   }
